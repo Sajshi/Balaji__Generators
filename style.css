@@ -1,0 +1,409 @@
+/* Navbar styles */
+/* Navbar styles */
+/* Navbar styles */
+ body {
+    position: relative; 
+  }
+
+
+  
+html {
+    scroll-behavior: smooth;
+}
+
+
+.custom-navbar {
+    height: 80px; /* Adjust the height as needed */
+}
+       
+
+        /* Add your responsive styles and media queries here */
+        @media (max-width: 767px) {
+    .navbar-light .navbar-nav .nav-link {
+        color: #fff; /* Set text color to white */
+    }
+    .navbar-light .navbar-toggler-icon {
+        background-color: #000; /* Set toggle icon color to white */
+    }
+    .navbar-light {
+        background-color: #000 !important; /* Set background color to black */
+    }
+}
+*{
+	padding: :0;
+	margin: :0;
+	text-decoration: none;
+	list-style: none;
+	
+}
+.imgslider{
+	width: 20%;
+	height: 00px;
+	max-width: 767px;
+	background-image: url("https://www.hondaindiapower.com/admin/public/uploads/Products/H3EPlnSDw4.jpg");
+	background-size: 100% 100%;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	animation: changeImage 10s linear infinite;
+	place-items: center;
+	align-items: center;
+	margin: 0 auto;
+	
+}
+
+ @media (max-width: 767px) {
+      width: 100%; /* Set to 100% on smaller screens */
+      flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+@keyframes changeImage {
+	0%{
+		background-image: url("https://www.hondaindiapower.com/admin/public/uploads/Products/H3EPlnSDw4.jpg")
+	}
+	25%{
+		background-image: url("https://5.imimg.com/data5/XI/PO/OJ/SELLER-10425879/mobile-van-generator-rental-services-500x500.jpeg")
+	}
+	50%{
+		background-image: url("https://jspower.co.uk/wp-content/uploads/2021/04/5_series-_biodiesel_canopy-BIO-DIESEL-PAGE.jpg")
+	}
+	75%{
+		background-image: url("https://4.imimg.com/data4/GQ/KJ/MY-2176327/standby-generator-500x500.jpg")
+	}
+	100%{
+		background-image: url("https://5.imimg.com/data5/SV/NN/MY-11031492/pem-hydrogen-generator.jpg")
+	}
+}
+
+.navbar {
+  background-color: black; /* Change the background color to dark blue */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link,
+.dropdown-item {
+  color: #fff !important; /* Set text color to white for all menu items */
+}
+
+.navbar-toggler-icon {
+  background-color: #black; /* Change the color of the toggler icon */
+}
+
+.img1 {
+            max-width: 80%;
+            max-height: 80px; /* Adjust the maximum height as needed */
+            width: auto;
+            height: auto;
+            filter: contrast(150%) brightness(90%) saturate(120%);
+            border: 0px solid #333;
+            border-radius: 0px;
+        }
+
+
+
+.btn-outline-success {
+  color: #; /* Change the button text color */
+  border-color: #fff; /* Change the button border color */
+}
+
+.btn-outline-success:hover {
+  background-color: #003366; /* Change the button background color on hover */
+  border-color: #003366; /* Change the button border color on hover */
+}
+
+
+#home {
+  /* Background image */
+  background-size: cover;
+
+  /* Other styles */
+  color: white; /* Set text color to white */
+  padding: 50px;
+  background: #001f3f; /* Set background color to dark blue */
+}
+
+
+
+@keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.1);
+            }
+            50% {
+                transform: scale(1);
+            }
+            75% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .heartbeat {
+            animation: heartbeat 2s ; /* Adjust the animation duration as needed */
+        }
+
+
+
+#about {
+  /* Background image */
+  
+  background-size: cover;
+  height: 100%;
+  width: 100%
+
+  /* Other styles */
+  color: #000; /* Set text color to white */
+  padding: 60px; /* Add padding as needed */
+}
+
+
+section {
+    min-height: 120vh; 
+	
+    padding-top: 40px; /* Adjust as needed */
+}
+
+
+
+
+        /
+#about img {
+  margin-top: 20px; /* Add top margin to the image */
+}
+
+
+
+
+/* Custom Styles for Box Shadow and Padding */
+.service {
+            /* Default styles */
+            position: relative;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 4rem;
+            overflow: hidden; /* Hide overflow for increased width on hover */
+            transition: background-color 0.3s ease; /* Transition effect for smooth changes */
+        }
+
+        .service:hover {
+            /* Hover styles */
+            background: linear-gradient(to top, #3498db 0%, #3498db 100%); /* Gradient from bottom to top */
+        }
+
+        .iconbox {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.3s ease; /* Transition effect for smooth changes */
+        }
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+}
+
+#generator-type-display {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+}
+
+#generator-type-display h2 {
+  margin: 0 0 10px;
+}
+
+#generator-type-display p {
+  margin: 0;
+  color: #888;
+}
+
+
+/* Existing styles remain unchanged */
+#container {
+            height: 100%;
+  width: 100%* Center the container */
+        }
+
+ #portfolio {
+            text-align: center;
+            animation: heartbeat 2s;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .image {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image:hover {
+            transform: scale(1.1);
+        }
+
+        #generator-type-display {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #generator-type-display h2 {
+            margin: 0 0 10px;
+        }
+
+        #generator-type-display p {
+            margin: 0;
+            color: #888;
+        
+
+
+
+   #contact1 {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        #contact p {
+            margin-bottom: 20px;
+        }
+
+        #fixed-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #whatsapp-button,
+        #call-us-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        #whatsapp-button:hover,
+        #call-us-button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        #google-map {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            margin-top: 20px;
+        }
+/* FOOTER */
+footer {
+    padding-top: 120px;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+footer li,
+footer p,
+footer a {
+    color: rgba(255,255,255,0.7);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--c-brand);
+    color: white;
+}
+
+
+/* Add this to your CSS */
+
+
+
